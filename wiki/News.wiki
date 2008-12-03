@@ -1,0 +1,23 @@
+#This page gives release news and plans for the chording-keyboard project.
+
+= Introduction to the Sequenced Chording Keyboard =
+
+Following the advice that open source projects should release early and release often, I have released version 0.1 of the project.  I'll be on holiday till Monday, which is why I released this buggy version.  It dies if you press more than 3 keys at a time, but if you only press 2 it works, so that's a beginning.
+
+There is a Bksp (backspace) key, but no cursor, and no arrow or tab keys to move the cursor around.  There's plenty of space in the code set for them, I just haven't got a round tuit yet.  I also haven't yet implemented Shift, Caps Lock, Alt or Ctrl keys yet.
+
+== The demo code only recognizes number keys 1 through 5 ==
+
+Every other key that you might press will be silently ignored.  Typamatic keys (automatic repeats of keys that you hold down) are discarded as well.
+
+== Multi-key combinations ==
+
+My laptop keyboard won't allow me to depress more than 3 or 4 (yes, it varies) keys simultaneously, which is a bit of a problem since the chording keyboard requires you to press up to 5 keys simultaneously.  To get around this problem, I have altered the code so that you can release any key that you have depressed at any time, except for the last key that you depressed - as soon as you release the last key pressed, the program chooses a code and appends it to the input area, terminating the coding sequence.
+
+Once you release the last key that you pressed down and get a character, you have to release all other keys that you have depressed before you can start entering the next character.  The hints line beneath the simulated screen tells you to "lego" (= let go) each of the keys that are still depressed, if any.
+
+As discussed in my original blog entry, I may in any event choose to allow keys to be depressed, released, and re-pressed within a single coding sequence.  This certainly isn't needed for the standard Latin alphabet, but once we get into national language support, with up to 7 different types of accent available per vowel, and many consonants taking garnish as well, the simplest way forward may be to allow the user to select a character as per usual, and once they have done so, to repurpose all of the keys other than the last one that they pressed to add accents, if needed.  If a repurposed key is already depressed, the user will have to let it go and repress it.
+
+== Ease of use ==
+
+When I initially blogged on the approach that underlies this demo, some folk expressed concern that it would be too complex and too slow to press multi-key sequences.  As you will see in the demo, there's a line of guidance below the simulated screen that tells you what pressing each of the 5 keys will do, so this can guide you through finding the alphas and numerics pretty simply.  Special characters don't offer quite so obvious an organization, I welcome any suggestions that folk may have.  And think about it, how long does it take you to find and click the 3 key sequence Ctrl-Alt-Del?  Probably not long at all.  Granted, you have been practicing.  Hopefully folk who use a sequenced chording keyboard would have cause to press the key sequences for a, b, c, etc a lot more often than they need to press Ctrl-Alt-Del, and so would learn their sequences too.
