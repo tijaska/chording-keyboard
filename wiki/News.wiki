@@ -1,4 +1,4 @@
-#This page gives release news and plans for the chording-keyboard project.
+This page gives release news and plans for the chording-keyboard project.
 
 = Introduction to the Sequenced Chording Keyboard =
 
