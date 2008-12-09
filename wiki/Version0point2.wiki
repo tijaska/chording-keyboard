@@ -10,4 +10,4 @@ I have added background colour coding changes to the simulated screen to help us
   * It turns pale pink if an unassigned key is clicked (but doesn't lose its place)
   * It turns back to pale green once a character has been completely encoded and entered into the screen area
 
-I have loaded this version of the demo onto my website here: http://turton.co.za/chordingKeyboard/chordingKeyboard.html
+I have loaded this version of the demo onto my website [http://turton.co.za/chordingKeyboard/chordingKeyboard.html here].
