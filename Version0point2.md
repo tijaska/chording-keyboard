@@ -1,0 +1,13 @@
+# Fairly Functional v0.2 #
+
+I have uploaded v0.2 of the demo, and it is able to successfully encode all 52 of the characters in its internal character map.  These comprise lower-case alphas, numerics, and 16 special characters including space and backspace.  No cursor movement keys yet, because the demo only has a single input field.
+
+All of the alphas and numeric digits can be encoded in using no more than three key depressions.  Granted, it's lower-case alpha only so far.
+
+I have added background colour coding changes to the simulated screen to help users keep track of where they are in the character encoding process.
+  * The screen starts pale green
+  * It turns pale yellow while the user is part-way through a coding sequence
+  * It turns pale pink if an unassigned key is clicked (but doesn't lose its place)
+  * It turns back to pale green once a character has been completely encoded and entered into the screen area
+
+I have loaded this version of the demo onto my website [here](http://turton.co.za/chordingKeyboard/chordingKeyboard.html).
